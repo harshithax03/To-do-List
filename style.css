@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#new-item-form{
+    margin-top: 20px;
+}
+#item-input{
+    height: 30px;
+    width: 290px;
+    text-align: center;
+
+}
+#btn{
+    height: 30px;
+    width: 80px;
+    padding: 5px;
+}
+.task-container{
+    height: 200px;
+    width: 400px;
+    text-align: left;
+    border: 1px solid black;
+    margin:  45px auto;
+    padding: 10px;
+}
+.head{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.done{
+    text-decoration: line-through;
+}
+.task-btn{
+    border: none;
+    height: 0px;
+    /* margin-left: 300px;00 */
+    float: right;
+    margin: 0;
+
+}
