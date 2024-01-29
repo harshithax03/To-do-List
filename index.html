@@ -28,17 +28,19 @@
       <!-- task container one contains The My list items -->
       <div class="task-container-one">
         <div class="head">My List👇</div>
-        <ul class="task-list">
+        <ul class="task-list" data-lists>
           <li class="list-name active-list">Youtube</li>
           <li class="list-name">Work</li>
           <li class="list-name">Grocery</li>
+  
         </ul>
-        <form id="new-item-form">
+        <form id="new-item-form" action="" data-new-list-form>
           <button id="btn">+</button>
-          <input type="text" id="item-input" placeholder="Add Your New Task" />
+          <input type="text" id="item-input" 
+          placeholder="Add New" data-new-list-input/>
         </form>
         <div class="list-delete-stuff">
-          <button class="btn delete">Delete list</button>
+          <button class="btn">Delete list</button>
         </div>
       </div>
       <!-- task container one end -->
@@ -80,7 +82,7 @@
       </div>
       <div class="delete-stuff">
         <button class="btn delete">Clear completed tasks</button>
-        <button class="btn delete">Delete list</button>
+        <button class="btn delete" data-delete-list-btn>Delete list</button>
       </div>
     </div>
   </body>
