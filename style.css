@@ -1,178 +1,170 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 /* :root{
     
 } */
-body{
-    width: 100vw;
-    height: 100vh;
-    text-align: center;
-    margin-top: 40px;
-    font-family: 'Poppins', sans-serif;
-    background-color:#66708513 ;
-    overflow: hidden;
-    /* color: #D0D5DD */
+body {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  margin-top: 40px;
+  font-family: "Poppins", sans-serif;
+  background-color: #dbdbdbf4;
+  overflow: hidden;
 }
 
-#new-item-form{
-    margin-top: 10px;
-    text-align: left;
+#new-item-form {
+  margin-top: 10px;
+  text-align: left;
 }
-#item-input{
-    /* height: 30px; */
-    padding: 5px;
-    width: auto;
-    text-align: left;
-    border: none;
-    background-color: transparent;
-    border-bottom: 1.5px solid rgb(184, 184, 184);
-    font-family: "Poppins", san-serif;
-
+#item-input {
+  padding: 5px;
+  width: auto;
+  text-align: left;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1.5px solid rgb(184, 184, 184);
+  font-family: "Poppins", san-serif;
 }
 
-#btn{
-    font-size: 1.3rem;
-    font-weight: 900;
-    padding: 5px;
-    background-color: transparent;
-    border: none;
-    color: rgb(30, 30, 30);
-}
-.task-container-one{
-    max-height: 100%;
-    height: 300px;
-    width: 300px;
-    text-align: center;
-    box-shadow: 0px 0px 1px black;
-    border-radius: 5px;
-    margin: 100px 55px 0px 0px;
-    padding: 20px;
-    background-color: rgb(230, 230, 230);
-    position: relative;
-    /* flex: 1; */
-}
-.task-container-two{
-    max-height: 1000px;
-    height: fit-content;
-    width: 500px;
-    text-align: center;
-    background-color: rgb(230, 230, 230);
-    /* border: 1px solid rgb(0, 0, 0); */
-    border-radius: 5px;
-    /* margin:  45px auto; */
-    padding: 20px 30px;
-    box-shadow: 0px 0px 1px black;
-    margin: 100px 55px 0px 0px;
-    position: relative;
-
-}
-.head{
-    text-align: center;
-    font-size: 1.3rem;
-    font-weight: 800;
-    letter-spacing: 3px;
-    /* text-decoration: underline */
-}
-.header{
-    font-weight: 900;
-    font-size: 2.5rem;
-    letter-spacing: 4px;
+#btn {
+  font-size: 1.3rem;
+  font-weight: 900;
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+  color: rgb(30, 30, 30);
 }
 
-.task-btn{
-    border: none;
-    outline: none;
-    background-color: white;
-    height: 0px;
-    /* margin-left: 300px;00 */
-    float: right;
-    margin: 0;
+/* Header elements START */
 
+.header {
+  font-weight: 900;
+  font-size: 2.5rem;
+  letter-spacing: 4px;
 }
-.main-container{
-    /* align-items: center; */
-    justify-content: center;
-    display: flex;
-    height: 100vh;
-    width: 100vw;
+
+.header-img {
+  width: 50px;
 }
-.tag-line{
-    font-weight: 600;
-    letter-spacing: 1.5px;
-    word-spacing: 5px;
+.tag-line {
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  word-spacing: 5px;
 }
-.delete-stuff {
-    position: absolute;
-    bottom: 130px;
-    left: 70%; /* Adjust the horizontal position */
-    transform: translateX(-50%); /* Center horizontally */
-    width: 100%; /* Ensure full width */
-    display: flex;
-    justify-content: center;
-    gap: 10px; /* Adjust the gap between buttons if needed */
+/* Header elements END */
+
+/* Main container elements START */
+.main-container {
+  /* align-items: center; */
+  justify-content: center;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
 }
-.btn{
-    padding: 5px;
-    border: 0px;
-    box-shadow: 0px 0px 1px black;
-    background-color: transparent;
-    border-radius: 3px;
-    margin: 0px 0px 0px 5px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
+/* task-container-one Elements START */
+.task-container-one {
+  max-height: 100%;
+  height: 300px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0px 0px 1px black;
+  border-radius: 5px;
+  margin: 100px 55px 0px 0px;
+  padding: 20px;
+  background-color: rgb(230, 230, 230);
+  position: relative;
 }
-.task-list-head{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.task-list {
+  text-align: left;
+  margin-top: 15px;
+  padding: 0px;
+  margin-left: 25px;
 }
-.task-count{
-    font-size: 0.8rem;
+.list-name {
+  font-weight: normal;
 }
-.list-name{
-    font-weight: 600;
-    font-size: 1rem;
+
+.list-delete-stuff {
+  position: absolute;
+  bottom: 20px;
+  left: 100px;
+  width: 100%;
+}
+/* task-container-one Elements END */
+/* task-container-two Elements START*/
+.task-container-two {
+  max-height: 1000px;
+  height: fit-content;
+  width: 500px;
+  text-align: center;
+  background-color: rgb(230, 230, 230);
+  border-radius: 5px;
+  padding: 20px 30px;
+  box-shadow: 0px 0px 1px black;
+  margin: 100px 55px 0px 0px;
+  position: relative;
+}
+.task-list-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.task-count {
+  font-size: 0.8rem;
+}
+.list-name {
+  font-weight: 600;
+  font-size: 1rem;
+}
+.task {
+  text-align: left;
+  margin-top: 25px;
 }
 
 [type="checkbox"] {
-    /* Hide the default checkbox */
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    /* Create a round checkbox */
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    border: 2px solid #424242; /* Change the border color as needed */
-    outline: none; /* Remove outline */
-    transition: background-color 0.5s ease-in-out;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid #424242; 
+  outline: none; 
+  transition: background-color 0.5s ease-in-out;
 }
 [type="checkbox"]:checked {
-    background-color: #424242; /* Change the background color when checked */
+  background-color: #424242;
 }
-.task{
-    text-align: left;
-    margin-top: 25px;
+.delete-stuff {
+  position: absolute;
+  bottom: 130px;
+  left: 70%; 
+  transform: translateX(-50%);
+  width: 100%; 
+  display: flex;
+  justify-content: center;
+  gap: 10px; 
 }
-.list-delete-stuff{
-    position: absolute;
-    bottom: 20px;
-    left: 100px;
-    width: 100%;
+/* task-container two Elements end */
+
+.head {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 800;
+  letter-spacing: 3px;
 }
-.task-list{
-    text-align: left;
-    margin-top: 15px;
-    padding: 0px;
-    margin-left: 25px;
-}
-.list-name {
-    font-weight: normal;
-}
-.header-img{
-    /* transform: scale(0.1); */
-    width: 50px;
+.btn {
+  padding: 5px;
+  border: 0px;
+  box-shadow: 0px 0px 1px black;
+  background-color: transparent;
+  border-radius: 3px;
+  margin: 0px 0px 0px 5px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
 }
 
+/* Main container elements end */
