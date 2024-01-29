@@ -90,15 +90,6 @@ body {
   padding: 0px;
   margin-left: 25px;
 }
-
-
-.list-delete-stuff {
-  position: absolute;
-  bottom: 20px;
-  left: 100px;
-  width: 100%;
-}
-
 /* task-container-one Elements END */
 /* task-container-two Elements START*/
 .task-container-two {
