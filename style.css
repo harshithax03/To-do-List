@@ -2,50 +2,100 @@
     margin: 0;
     padding: 0;
 }
+/* :root{
+    
+} */
 body{
     width: 100vw;
     height: 100vh;
     text-align: center;
     margin-top: 40px;
     font-family: 'Poppins', sans-serif;
+    background-color:#66708513 ;
+    overflow: hidden;
+    /* color: #D0D5DD */
 }
 
 #new-item-form{
     margin-top: 20px;
+    text-align: left;
 }
 #item-input{
-    height: 30px;
-    width: 290px;
-    text-align: center;
+    /* height: 30px; */
+    padding: 5px;
+    width: auto;
+    text-align: left;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1.5px solid rgb(184, 184, 184);
 
 }
+
 #btn{
-    height: 30px;
-    width: 80px;
+    font-size: 1.3rem;
+    font-weight: 900;
     padding: 5px;
+    background-color: transparent;
+    border: none;
+    color: rgb(30, 30, 30);
 }
-.task-container{
-    height: 200px;
+.task-container-one{
+    max-height: 100%;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0px 0px 1px black;
+    border-radius: 5px;
+    margin: 100px 55px 0px 0px;
+    padding: 20px;
+    background-color: rgb(230, 230, 230);
+    /* flex: 1; */
+}
+.task-container-two{
+    max-height: 100%;
+    height: 300px;
     width: 400px;
-    text-align: left;
-    border: 1px solid black;
-    margin:  45px auto;
-    padding: 10px;
+    text-align: center;
+    background-color: rgb(230, 230, 230);
+    /* border: 1px solid rgb(0, 0, 0); */
+    border-radius: 5px;
+    /* margin:  45px auto; */
+    padding: 20px;
+    box-shadow: 0px 0px 1px black;
+    margin: 100px 55px 0px 0px;
+
 }
 .head{
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: 700;
+    letter-spacing: 3px;
+}
+.header{
+    font-weight: 900;
+    font-size: 2.5rem;
+    letter-spacing: 4px;
 }
 
-.done{
-    text-decoration: line-through;
-}
 .task-btn{
     border: none;
+    outline: none;
+    background-color: white;
     height: 0px;
     /* margin-left: 300px;00 */
     float: right;
     margin: 0;
 
+}
+.main-container{
+    /* align-items: center; */
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+.tag-line{
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    word-spacing: 5px;
 }
