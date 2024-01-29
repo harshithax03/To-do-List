@@ -171,4 +171,8 @@ body{
 .list-name {
     font-weight: normal;
 }
+.header-img{
+    /* transform: scale(0.1); */
+    width: 50px;
+}
 
