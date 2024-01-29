@@ -3,11 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <title>Simple To-do List</title>
   </head>
   <body>
@@ -17,32 +20,85 @@
       <p class="tag-line">organize all your tasks in one place</p>
     </div>
     <div>
-     <!-- add tasks  -->
-      
+      <!-- add tasks  -->
     </div>
     <!-- add item container div -->
-      <div class="main-container">
-        <div class="task-container-one">
-          <div class="head">My List👇</div>
-          <form id="new-item-form">
-            <button id="btn">+</button>
-            <input type="text" id="item-input" placeholder="Add Your New Task" />
-            
-          </form>
-         
+    <div class="main-container">
+      <div class="task-container-one">
+        <div class="head">My List👇</div>
+        <ul class="task-list">
+          <li class="list-name active-list">Youtube</li>
+          <li class="list-name">Work</li>
+          <li class="list-name">Grocery</li>
+        </ul>
+        <form id="new-item-form">
+          <button id="btn">+</button>
+          <input type="text" id="item-input" placeholder="Add Your New Task" />
+        </form>
+        <div class="list-delete-stuff">
+          <!-- <button class="btn delete">Clear completed tasks</button> -->
+          <button class="btn delete">Delete list</button>
+        </div>
       </div>
-  <div>
       <div class="task-container-two">
-          <div class="head">To-do☑️</div>
-          <form id="new-item-form">
-            <button id="btn">+</button>
-            <input type="text" id="item-input" placeholder="Add Your New Task" />
-          
-          </form>
-      </div>
-      
-  </div>
-      </div>
+        <div class="task-list-head">
+          <div class="head">
+            To-do☑️
+            <div class="list-name">HomeWork</div>
+          </div>
+          <p class="task-count">4 tasks remaining</p>
+        </div>
+        <!-- task 1 -->
+        <div class="task">
+          <input 
+            type="checkbox"
+            id="task-1"
+          />
+          <label for="task-1">
+            record todo list video
+          </label>
+        </div>
+        <!-- task2 -->
+        <div class="task">
+          <input 
+            type="checkbox"
+            id="task-1"
+          />
+          <label for="task-1">
+            record todo list video
+          </label>
+        </div>
+        <!-- task3 -->
+        <div class="task">
+          <input 
+            type="checkbox"
+            id="task-1"
+          />
+          <label for="task-1">
+            record todo list video
+          </label>
+        </div>
+        <!-- task4 -->
+        <div class="task">
+          <input 
+            type="checkbox"
+            id="task-1"
+          />
+          <label for="task-1">
+            record todo list video
+          </label>
+        </div>
+        <!-- task 4 -->
+        <form id="new-item-form">
+          <button id="btn">+</button>
+          <input type="text" id="item-input" placeholder="Add Your New Task" />
+        </form>
        
+      </div>
+      <div class="delete-stuff">
+        <button class="btn delete">Clear completed tasks</button>
+        <button class="btn delete">Delete list</button>
+      </div>
+    </div>
   </body>
 </html>
