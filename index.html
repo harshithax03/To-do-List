@@ -27,17 +27,23 @@
     <div class="main-container">
       <!-- task container one contains The My list items -->
       <div class="task-container-one">
-        <div class="head"><img src="./images/light mode.svg" class="list-icon">My List </div>
+        <div class="head">
+          <img src="./images/light mode.svg" class="list-icon"/>
+          <div class="head-text">My List</div>
+        </div>
         <ul class="task-list" data-lists>
           <li class="list-name active-list">Youtube</li>
           <li class="list-name">Work</li>
           <li class="list-name">Grocery</li>
-  
         </ul>
         <form id="new-item-form" action="" data-new-list-form>
           <button id="btn">+</button>
-          <input type="text" id="item-input" 
-          placeholder="Add New" data-new-list-input/>
+          <input
+            type="text"
+            id="item-input"
+            placeholder="Add New"
+            data-new-list-input
+          />
         </form>
       </div>
       <!-- task container one end -->
@@ -48,9 +54,7 @@
             To-do☑️
             <div class="list-name-title" data-list-title>HomeWork</div>
           </div>
-          <p class="task-count" data-task-count>
-            
-            4 tasks remaining</p>
+          <p class="task-count" data-task-count>4 tasks remaining</p>
         </div>
         <!-- task 1 -->
         <div class="task" data-tasks>
@@ -61,20 +65,24 @@
         <!-- new item  -->
         <form id="new-item-form" data-new-task-form>
           <button id="btn">+</button>
-          <input 
-          data-new-task-input
-          type="text" id="item-input" placeholder="Add Your New Task" />
+          <input
+            data-new-task-input
+            type="text"
+            id="item-input"
+            placeholder="Add Your New Task"
+          />
         </form>
       </div>
       <div class="delete-stuff">
-        <button class="btn delete" data-clear-complete-task-btn>Clear completed tasks</button>
+        <button class="btn delete" data-clear-complete-task-btn>
+          Clear completed tasks
+        </button>
         <button class="btn delete" data-delete-list-btn>Delete list</button>
       </div>
     </div>
     <template id="task-template">
       <div class="task">
-        <input 
-        type="checkbox" />
+        <input type="checkbox" />
         <label></label>
       </div>
     </template>
