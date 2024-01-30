@@ -27,7 +27,7 @@
     <div class="main-container">
       <!-- task container one contains The My list items -->
       <div class="task-container-one">
-        <div class="head">My List👇</div>
+        <div class="head"><img src="./images/light mode.svg" class="list-icon">My List </div>
         <ul class="task-list" data-lists>
           <li class="list-name active-list">Youtube</li>
           <li class="list-name">Work</li>
@@ -42,45 +42,41 @@
       </div>
       <!-- task container one end -->
       <!-- task container two contains the tasks of each list -->
-      <div class="task-container-two">
+      <div class="task-container-two" data-list-display-container>
         <div class="task-list-head">
-          <div class="head">
+          <div>
             To-do☑️
-            <div class="list-name">HomeWork</div>
+            <div class="list-name-title" data-list-title>HomeWork</div>
           </div>
-          <p class="task-count">4 tasks remaining</p>
+          <p class="task-count" data-task-count>
+            
+            4 tasks remaining</p>
         </div>
         <!-- task 1 -->
-        <div class="task">
-          <input type="checkbox" id="task-1" />
-          <label for="task-1"> record todo list video </label>
-        </div>
-        <!-- task2 -->
-        <div class="task">
-          <input type="checkbox" id="task-1" />
-          <label for="task-1"> record todo list video </label>
-        </div>
-        <!-- task3 -->
-        <div class="task">
-          <input type="checkbox" id="task-1" />
-          <label for="task-1"> record todo list video </label>
-        </div>
-        <!-- task4 -->
-        <div class="task">
+        <div class="task" data-tasks>
           <input type="checkbox" id="task-1" />
           <label for="task-1"> record todo list video </label>
         </div>
         <!-- tasks end -->
         <!-- new item  -->
-        <form id="new-item-form">
+        <form id="new-item-form" data-new-task-form>
           <button id="btn">+</button>
-          <input type="text" id="item-input" placeholder="Add Your New Task" />
+          <input 
+          data-new-task-input
+          type="text" id="item-input" placeholder="Add Your New Task" />
         </form>
       </div>
       <div class="delete-stuff">
-        <button class="btn delete">Clear completed tasks</button>
+        <button class="btn delete" data-clear-complete-task-btn>Clear completed tasks</button>
         <button class="btn delete" data-delete-list-btn>Delete list</button>
       </div>
     </div>
+    <template id="task-template">
+      <div class="task">
+        <input 
+        type="checkbox" />
+        <label></label>
+      </div>
+    </template>
   </body>
 </html>
