@@ -6,4 +6,17 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
+  text-align: center;
+}
+
+button{
+  margin-left: 5px;
+}
+.list{
+  padding: 15px;
+  text-align: left;
+  border: 1px solid white;
+  min-height: 250px;
+  margin: 20px;
+  line-height: 40px;
 }
